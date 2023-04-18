@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="copyright">
-        <p>copyright</p>
+        <p> Copyright @ 2023 Freespace All Right Reserved</p>
       </div>
     </div>
   );
