@@ -1,8 +1,11 @@
 import React from "react";
 import { RegisterBg } from "../../assets";
 import "./detailBlog.scss";
+import { Gap, Link } from "../../components";
+import { useHistory } from "react-router-dom";
 
 const DetailBlog = () => {
+  const history = useHistory();
   return (
     <div className="detail-blog-wrapper">
       <img className="img-cover" src={RegisterBg} alt="thumb" />
@@ -16,6 +19,8 @@ const DetailBlog = () => {
         centuries, but also the leap into electronic typesetting, remaining
         essentially unchanged.
       </p>
+      <Gap height={20} />
+      <Link tittle="Kembali ke Home" onClick={() => history.push("/")} />
     </div>
   );
 };
